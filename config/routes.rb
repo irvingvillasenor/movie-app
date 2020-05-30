@@ -7,5 +7,12 @@ Rails.application.routes.draw do
     get "/actors_url" => "actors#single_actor"
 
     get "/movies" => "movies#all_movies"
+    get "/single_movie" => "movies#single_movie"
+
+    get "/query" => "movies#take"
+
+    get "/pure" => "movies#pure"
+
+    get "/pluck" => "movies#pluck"
   end
 end
