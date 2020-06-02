@@ -14,5 +14,9 @@ Rails.application.routes.draw do
     get "/pure" => "movies#pure"
 
     get "/pluck" => "movies#pluck"
+
+    get "/actors" => "actors#individual"
+    get "/actors/:first_name" => "actors#individual"
+    post "/actors" => "actors#individual"
   end
 end
