@@ -1,5 +1,7 @@
 class Api::MoviesController < ApplicationController
 
+  before_action :authenticate_admin, except: [:index, :show]
+
   # def all_movies
   #   @movies = Movie.all
   #   render "movie.json.jb"
@@ -22,7 +24,7 @@ class Api::MoviesController < ApplicationController
   # end
 
   def index
-    @movie = Movie.all.where(english: true)
+    @movies = Movie.all.where(english: true)
     render "index.json.jb"
   end
 
