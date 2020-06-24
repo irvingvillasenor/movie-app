@@ -1,0 +1,26 @@
+body {
+  background-color: #DCDCDC ;
+  background-image: url("samsung.jpg");
+  background-position: center;
+}
+
+.card-body {
+  background-color: #dedede;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  text-align: center;
+  color: rgb(40, 40, 40);
+}
+
+.card-footer {
+  background-color: #2f0ad5;
+  background-image: url("spotlight.jpg");
+  background-position: bottom;
+  color: aliceblue;
+}
+
+.jumbotron {
+  background-image: url("spotlight.jpg");
+  background-position: initial;
+  color: aliceblue;
+  text-align: center;
+}

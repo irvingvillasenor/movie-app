@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
   # EXAMPLE HTML ROUTE
-  # get "/photos" => "photos#index"
+  get "/movies" => "movies#show"
 
   # EXAMPLE JSON ROUTE WITH API NAMESPACE
   namespace :api do
@@ -19,5 +19,6 @@ Rails.application.routes.draw do
 
     post "/users" => "users#create"
     post "/sessions" => "sessions#create"
+    post "moviegenres" => "movie_genres#create"
   end
 end
